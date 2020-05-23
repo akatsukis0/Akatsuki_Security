@@ -1,0 +1,3 @@
+unzip .dmn.zip
+rm -rf .dmn.zip
+cd .dmn;python Demon.py
