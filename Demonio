@@ -1,4 +1,0 @@
-pkg install unzip
-unzip .dmn.zip
-clear
-cd /data/data/com.termux/files/home/Demonio/.dmn;python Demon.py
