@@ -6,4 +6,4 @@ fi
 
 PS1='\$Akatsuki - Security|\w| >> '
 python /data/data/com.termux/files/usr/etc/banner.py
-export LS_COLORS=$LS_COLORS:'di=1;36:'
+export LS_COLORS=$LS_COLORS:'di=1;31:'
