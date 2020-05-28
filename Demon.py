@@ -1,0 +1,62 @@
+import os
+import time
+import sys
+
+def efecto(s):
+    for c in s + '\n':
+        sys.stdout.write(c)
+        sys.stdout.flush()
+        time.sleep(2.0/70)
+print ("""
+AJUSTE LA PANTALLA HASTA QUE LA LINEA QUEDE RECTA CUANDO ESTE 
+AJUSTADO SOLO DELE ENTER
+######################################################################""")
+
+input('')
+print ("COLOCANDO BANNER")
+time.sleep(2.0)
+os.system('python banner.py')
+######
+os.system('apt update && apt upgrade -y')
+os.system('rm -rf /data/data/com.termux/files/usr/etc/motd')
+os.system('pkg install figlet -y')
+os.system('mv banner.py /data/data/com.termux/files/usr/etc')
+os.system('mv bash.bashrc /data/data/com.termux/files/usr/etc')
+os.system('mv install.py /data/data/com.termux/files/usr/etc')
+os.system('mv menu /data/data/com.termux/files/usr/bin/')
+os.system('chmod +x /data/data/com.termux/files/usr/bin/menu')
+os.system('mv reset /data/data/com.termux/files/usr/bin/')
+os.system('chmod +x /data/data/com.termux/files/usr/bin/reset')
+os.system('mv update /data/data/com.termux/files/usr/bin/')
+os.system('chmod +x /data/data/com.termux/files/usr/bin/update')
+os.system('mv pkg /data/data/com.termux/files/usr/bin/')
+os.system('chmod +x /data/data/com.termux/files/usr/bin/pkg')
+os.system('pkg install python2 -y')
+os.system('pkg install php -y')
+os.system('pkg install openssh -y')
+os.system('pkg install nano -y')
+os.system('pkg install git -y')
+os.system('pkg install tor -y')
+os.system('pkg install w3m -y')
+os.system('pkg install nmap -y')
+os.system('mkdir $HOME/Tools')
+os.system('cd /data/data/com.termux/files/usr/etc;git clone https://gitlab.com/sociedad-anonima/Termux-Metasploit.git')
+os.system('cd $HOME/Tools;git clone https://github.com/thelinuxchoice/userrecon')
+os.system('cd /data/data/com.termux/files/usr/etc;git clone https://gitlab.com/sociedad-anonima/Metasploit-Android.git')
+os.system('cd $HOME/Tools;git clone https://github.com/evait-security/weeman')
+os.system('cd $HOME/Tools;git clone https://github.com/TermuxHacking000/TempMail')
+os.system('cd $HOME/Tools;git clone https://github.com/TermuxHacking000/ShortUrl')
+os.system('cd $HOME/Tools;git clone https://github.com/Mebus/cupp.git')
+os.system('cd $HOME/Tools;git clone https://github.com/BO3K404/BO3K_ZIP.git')
+os.system('cd $HOME/Tools;git clone https://github.com/suyash6/hulk')
+os.system('cd $HOME/Tools;git clone https://github.com/noob-hackers/hacklock')
+os.system('cd $HOME/Tools;git clone https://github.com/maldevel/IPGeoLocation')
+os.system('cd $HOME/Tools;git clone https://github.com/m4ll0k/Infoga')
+os.system('cd $HOME/Tools;git clone https://github.com/sqlmapproject/sqlmap')
+os.system('mkdir $HOME/.termux')
+os.system('mv colors.properties $HOME/.termux')
+os.system('mv termux.properties $HOME/.termux')
+os.system('termux-setup-storage')
+os.system('cd $HOME')
+os.system('clear;bash')
+os.system('cd /data/data/com.termux/files/home/Tools/')
